@@ -1,20 +1,55 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+	<script src="//cdn.jsdelivr.net/npm/less@3.13"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
 	<meta charset="UTF-8">
 	<title>Main</title>
-	<script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
-	<link rel="stylesheet/less" type="text/css" href="style/style.less">
 </head>
 <body>
-<header>
-	<img src="img/logo.svg" alt="logo">
-	<div class="menu">
-		<a href="/">1</a>
-		<a href="/">2</a>
-		<a href="/">3</a>
+	<header>
+		<img src="img/logo.svg" alt="logo">
+		<div class="menu">
+			<button class="menu-burger"></button>
+			<div class="menu-items">
+				<a href="/">пункт меню</a>
+				<a href="/">пункт меню</a>
+				<a href="/">пункт меню</a>
+			</div>
+		</div>
+	</header>
+	<div class="main">
+		<img class="main-img" src="img/main-img.png" alt="main">
+		<div class="main-item quotes">Котировки</div>
+		<div class="main-item news">Новости</div>
+		<div class="main-item info info1">
+			<img class="info-img" src="img/info-img.png">
+			<div class="info-text">
+				<div class="info-title">Раскрытие информации</div>
+				<div class="info-desc">Размещен Ежеквартальный отчет эмитента за 1 квартал 2019 года</div>
+				<div class="info-desc">Размещен Ежеквартальный отчет эмитента за 1 квартал 2019 года</div>
+			</div>
+		</div>
+		<div class="main-item info info2">
+			<img class="info-img" src="img/info-img.png">
+			<div class="info-text">
+				<div class="info-title">Раскрытие информации</div>
+				<div class="info-desc">Размещен Ежеквартальный отчет эмитента за 1 квартал 2019 года</div>
+				<div class="info-desc">Размещен Ежеквартальный отчет эмитента за 1 квартал 2019 года</div>
+			</div>
+		</div>
+		<div class="main-item info info3 active">
+			<img class="info-img" src="img/info-img.png">
+			<div class="info-text">
+				<div class="info-title">Раскрытие информации</div>
+				<div class="info-desc">Размещен Ежеквартальный отчет эмитента за 1 квартал 2019 года</div>
+				<div class="info-desc">Размещен Ежеквартальный отчет эмитента за 1 квартал 2019 года</div>
+			</div>
+		</div>
 	</div>
-</header>
-
+	<footer></footer>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="./script/index.js"></script>
 </body>
 </html>
