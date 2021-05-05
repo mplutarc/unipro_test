@@ -1,0 +1,211 @@
+html,
+body {
+  width: 100%;
+  margin: 0;
+}
+html header,
+body header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 15px;
+}
+html header img,
+body header img {
+  height: 42px;
+}
+html header .menu,
+body header .menu {
+  position: relative;
+}
+html header .menu .menu-burger,
+body header .menu .menu-burger {
+  background-color: #0078DC;
+  height: 42px;
+  width: 42px;
+  border: none;
+}
+html header .menu .menu-items,
+body header .menu .menu-items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #0078DC;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  width: 42px;
+  height: 0;
+  opacity: 0;
+  z-index: 999;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 42px;
+  text-align: center;
+}
+html header .menu .menu-items a,
+body header .menu .menu-items a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  white-space: nowrap;
+}
+html header .menu.active .menu-items,
+body header .menu.active .menu-items {
+  height: auto;
+  width: auto;
+  opacity: 1;
+}
+html .main,
+body .main {
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+html .main img,
+body .main img {
+  margin-bottom: 10px;
+  width: 100%;
+}
+html .main .main-item,
+body .main .main-item {
+  background-color: #C4C4C4;
+  margin: 10px 15px;
+  padding: 2em;
+}
+html .main .info,
+body .main .info {
+  padding: 0.7em;
+}
+html .main .info img,
+body .main .info img {
+  display: none;
+}
+html .main .info .info-title,
+body .main .info .info-title {
+  font-weight: bolder;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+html .main .info .info-desc,
+body .main .info .info-desc {
+  -webkit-transition: all 0.5s cubic-bezier(0.6, 0.06, 0.75, 1.37);
+  transition: all 0.5s cubic-bezier(0.6, 0.06, 0.75, 1.37);
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+html .main .info.active,
+body .main .info.active {
+  background-color: #CFCFCF;
+}
+html .main .info.active .info-title,
+body .main .info.active .info-title {
+  color: #0078DC;
+}
+html .main .info.active .info-desc,
+body .main .info.active .info-desc {
+  opacity: 1;
+  height: auto;
+  margin: 1em 0;
+}
+html footer,
+body footer {
+  background-color: #0078DC;
+  height: 330px;
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  header img {
+    height: 63px;
+  }
+  .main {
+    position: relative;
+  }
+  .main .main-img {
+    height: 320px;
+    margin-left: 15px;
+    width: calc(100vw - (180px - 4em) - 95px);
+  }
+  .main .quotes {
+    margin: 0 15px 0 0 !important;
+    position: absolute;
+    right: 0;
+    width: calc(180px - 4em);
+    height: calc(320px - 4em);
+  }
+  .main .news {
+    height: 150px;
+    padding: 41px 148px;
+  }
+  .main .info {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 0;
+  }
+  .main .info .info-img {
+    width: 180px;
+    height: 120px;
+    display: block !important;
+    opacity: 0;
+  }
+  .main .info .info-text {
+    padding: 17px 27px;
+  }
+  .main .info .info-text .info-desc {
+    opacity: 0;
+    height: auto;
+    margin: 1em 0;
+  }
+  .main .info.active {
+    background-color: #EFEFEF;
+  }
+  .main .info.active .info-img {
+    opacity: 1;
+  }
+  .main .info.active .info-text .info-desc {
+    opacity: 1;
+  }
+  footer {
+    margin-top: 15px;
+  }
+}
+
+/*# sourceMappingURL=style.min.css.map */
