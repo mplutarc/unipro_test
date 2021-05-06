@@ -247,7 +247,7 @@ body footer {
   }
   header .menu .menu-items {
     background-color: #0078DC;
-    padding: 1em 1em 1em calc((100% - 960px) / 2 + 30px);
+    padding: 1em 1em 1em calc((100% - 960px) / 2 + 35px);
   }
   .main {
     max-width: 960px;
